@@ -1,24 +1,39 @@
+<style>
+  #nav-books{
+    width: 85px;
+    height: 120px;
+    padding: 10px;
+    margin-left: 30px;
+  }
+</style>
+
 <header>
   <nav
     class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
   >
     <div class="container">
-      <a class="navbar-brand" [routerLink]="['/']">BookStore101</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
-        aria-label="Toggle navigation"
-        [attr.aria-expanded]="isExpanded"
-        (click)="toggle()"
-      >
+      <a class="navbar-brand" [routerLink]="['/']">Kristia's Bookstore</a>
+
+      <button class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              aria-label="Toggle navigation"
+              [attr.aria-expanded]="isExpanded"
+              (click)="toggle()">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
-        [ngClass]="{ show: isExpanded }"
-      >
+      <!--book cover slide-->
+      <img id="nav-books" src="assets/images/book101.png" />
+      <img id="nav-books" src="assets/images/book102.png" />
+      <img id="nav-books" src="assets/images/book103.png" />
+      <img id="nav-books" src="assets/images/book104.png" />
+      <img id="nav-books" src="assets/images/book105.png" />
+      <img id="nav-books" src="assets/images/book106.png" />
+      <img id="nav-books" src="assets/images/book107.png" />
+      <img id="nav-books" src="assets/images/book108.png" />
+      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
+           [ngClass]="{ show: isExpanded }">
         <ul class="navbar-nav flex-grow">
           <li class="nav-item"
               [routerLinkActive]="['link-active']"
@@ -27,7 +42,8 @@
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
             <a class="nav-link text-dark" [routerLink]="['/cart']">
-               <img style="width:30px;height:30px;" src="\assets\images\cart.png" /> Cart</a>
+              <img style="width:30px;height:30px;" src="\assets\images\cart.png" /> Cart
+            </a>
           </li>
         </ul>
       </div>
