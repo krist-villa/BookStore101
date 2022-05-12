@@ -18,7 +18,7 @@ namespace BookStore101.Controllers
         }
 
         [HttpPut]
-        public List<DTO.BooksDto> AddBooks(int ItemId, string ItemName, string Author, double Price, string Description)
+        public List<DTO.BooksDto> AddBooks()
         {
             List<DTO.BooksDto> books = new List<DTO.BooksDto>();
             books.Add(new DTO.BooksDto());

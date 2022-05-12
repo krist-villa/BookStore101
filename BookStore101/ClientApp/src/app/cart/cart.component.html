@@ -1,15 +1,8 @@
-<!--AS FOR NOW, THIS *ngIf IS NOT WORKING
-<div *ngIf="cartItems.length > 0">
-  <table>
-    <th>{{cartItems.itemName}}</th>
-    <tr>{{cartItems.price}}</tr>
-  </table>
-</div>
+<app-cart-item" *ngFor="let item of cart" [cartItems]="item"></app-cart-item">
 
 <div *ngIf="cartItems.length === 0">
   <div class="alert alert-info">Your Cart is Empty</div>
-</div>-->
-
-<div class="alert alert-info">Your Cart is Empty</div>
+  <img style="width: 300px; height: 150px; margin-left:35%" src="/assets/images/empty.png" />
+</div>
 
 

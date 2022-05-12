@@ -1,6 +1,23 @@
-<h1>Kristia's Bookstore</h1>
+<style>
+  #title{
+    text-align: center;
+    padding: 30px;
+  }
+  #heart-title {
+    width: 100px;
+    height: 120px;
+  }
+</style>
 
-<h3>Available Books in the store:</h3>
+<div id="title">
+  <img id="heart-title" src="/assets/images/heart.png" />
+  <h1>Kristia's Bookstore</h1>
+  <h4><i>where you can find nice books</i></h4>
+
+</div>
+
+<h2>Available Books in the store:</h2>
+
 
 <app-book-item *ngFor="let item of books" [book]="item"></app-book-item>
 

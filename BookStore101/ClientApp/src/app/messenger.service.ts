@@ -12,7 +12,7 @@ export class MessengerService {
   constructor() { }
 
   sendMessage(book: any) {
-/*    console.log(book)*/
+    console.log(book)
     this.subject.next(book) // trigger for add-to-cart button
   }
 
