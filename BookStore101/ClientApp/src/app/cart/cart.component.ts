@@ -25,11 +25,11 @@ export class CartComponent implements OnInit {
 
     }
 
-  addToCart(book: any) {
+  addToCart(cartItems: any) {
     // this puts books into the cart
     this.cartItems.push({
-      itemName: book.itemName,
-      price: book.price
+      itemName: cartItems.itemName,
+      price: cartItems.price
     })
   }
 
