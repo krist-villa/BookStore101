@@ -14,7 +14,7 @@ export class CartComponent implements OnInit {
 
 /*  @Input() cartItems: Cart | undefined;*/
 
-  @Input() book: Book | undefined;
+  @Input() book: any[] | undefined;
 
   constructor(private msg: MessengerService) { }
 
@@ -25,13 +25,15 @@ export class CartComponent implements OnInit {
 
     }
 
-  addToCart(cartItems: any) {
+  addToCart(book: any) {
     // this puts books into the cart
     this.cartItems.push({
-      itemName: cartItems.itemName,
-      price: cartItems.price
+      itemName: book.itemName,
+      price: book.price
     })
   }
+
+
 
 }
 

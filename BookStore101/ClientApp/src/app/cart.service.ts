@@ -10,10 +10,10 @@ export class CartService {
   constructor(private http: HttpClient, @Inject('BASE_URL') private baseUrl: string) { }
 
   getCart() {
-    return this.http.get<Cart[]>(this.baseUrl + 'cartItems');
+    return this.http.get<Cart[]>(this.baseUrl + 'books');
   }
 
   addToCart() {
-    return this.http.put<Cart[]>(this.baseUrl + 'cartItems');
+    return this.http.put<Cart[]>(this.baseUrl + 'books');
   }
 }

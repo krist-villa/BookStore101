@@ -11,7 +11,7 @@ export class CartItemComponent implements OnInit {
 
   cartItems: Cart[] = [];
 
-  /*@Input() cartItems: Cart | undefined;*/
+  @Input() book: Book | undefined;
 
   constructor() { }
 
