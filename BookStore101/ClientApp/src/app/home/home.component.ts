@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Book } from '../../models/book';
+import { Cart } from '../../models/cart';
 import { ShoppingService } from '../shopping.service';
 
 @Component({
@@ -8,6 +9,7 @@ import { ShoppingService } from '../shopping.service';
 })
 export class HomeComponent {
   books: Book[] = [];
+  
 
   constructor(private shoppingService: ShoppingService)
   {

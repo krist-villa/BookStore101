@@ -1,8 +1,30 @@
-<div style="border: 1px solid gray; padding: 5px; display: inline-block;">
-  <p>Book ID: {{book?.itemId}}</p>
-  <p>Book Title: {{book?.itemName}}</p>
-  <p>Author Name: {{book?.author}}</p>
-  <p>Price: {{book?.price}}</p>
-  <p>Description: {{book?.description}}</p>
-  <button style="color: black; padding: 5px;">add to cart</button>
-</div>
+<!DOCTYPE html>
+<html>
+<style>
+  table, th, td {
+    border: 5px;
+  }
+</style>
+
+  <table style="border: 1px solid gray; padding: 5px; display: grid;">
+    <tr>
+      <th>Book ID: {{book?.itemId}}</th>
+    </tr>
+    <tr>
+      <td>Book Title: {{book?.itemName}}</td>
+    </tr>
+    <tr>
+      <td>Author Name: {{book?.author}}</td>
+    </tr>
+    <tr>
+      <td>Price: {{book?.price}}</td>
+    </tr>
+    <tr>
+      <td>Description: {{book?.description}}</td>
+    </tr>
+    <button
+            type="button"
+            (click)="handleAddToCart()">add to cart</button>
+  </table>
+
+

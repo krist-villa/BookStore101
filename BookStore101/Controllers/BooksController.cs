@@ -8,7 +8,7 @@ namespace BookStore101.Controllers
     {
         public static List<DTO.BooksDto> books = new List<DTO.BooksDto>()
             {
-                new DTO.BooksDto{ ItemId = 101, ItemName = "splashing through deep puddles", Author = "Sarah Salarvand", Description = "poetry"},
+                new DTO.BooksDto{ ItemId = 101, ItemName = "splashing through deep puddles", Author = "Sarah Salarvand", Description = "poetry", Price = 12.99},
                 new DTO.BooksDto{ ItemId = 102, ItemName = "maybe i'm bad", Author = "Amie James", Description = "poetry", Price = 10.99},
                 new DTO.BooksDto{  ItemId = 103, ItemName = "uncaged wallflower", Author = "Jennae Cecelia", Description = "poetry", Price = 5.49},
                 new DTO.BooksDto{  ItemId = 104, ItemName = "anatomy", Author = "Katrina Vigil", Description = "poetry", Price = 12.99},

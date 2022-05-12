@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { BookItemComponent } from './home/book-item/book-item.component';
+import { CartComponent } from './cart/cart.component';
+import { CartItemComponent } from './cart/cart-item/cart-item.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { BookItemComponent } from './home/book-item/book-item.component';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    BookItemComponent
+    BookItemComponent,
+    CartComponent,
+    CartItemComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -27,8 +31,10 @@ import { BookItemComponent } from './home/book-item/book-item.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'book-item', component: BookItemComponent },
+      //{ path: 'counter', component: CounterComponent },
+      //{ path: 'fetch-data', component: FetchDataComponent },
+      { path: 'cart', component: CartComponent }
     ])
   ],
   providers: [],
